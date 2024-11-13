@@ -1,0 +1,43 @@
+{
+  "name": "shopify-vite",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*",
+    "preset"
+  ],
+  "scripts": {
+    "build": "turbo run build --filter=vite-plugin-*",
+    "dev": "turbo run dev --filter=vite-plugin-* --parallel",
+    "lint": "turbo run lint",
+    "change:add": "changeset add",
+    "change:version": "changeset version",
+    "change:publish": "npm run build && changeset publish",
+    "docs:dev": "pnpm -C docs run dev",
+    "docs:build": "pnpm -C docs run build",
+    "docs:preview": "pnpm -C docs run dev",
+    "test": "turbo run test --filter=vite-plugin-*"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.23.0",
+    "@types/debug": "^4.1.7",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.12.1",
+    "eslint-config-standard-with-typescript": "^21.0.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "tsup": "^6.6.3",
+    "turbo": "^1.3.0",
+    "typescript": "^4.7.4"
+  },
+  "packageManager": "pnpm@7.1.0"
+}

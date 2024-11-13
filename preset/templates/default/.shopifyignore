@@ -1,0 +1,17 @@
+package.json
+jsconfig.json
+package-lock.json
+frontend/
+vite.config.js
+tailwind.config.cjs
+postcss.config.cjs
+.gitignore
+.prettierignore
+.prettierrc.json
+.theme-check.yml
+.vscode/
+*.md
+translation.yml
+node_modules
+.git/
+.github/

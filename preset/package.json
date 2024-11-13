@@ -1,0 +1,15 @@
+{
+  "name": "shopify-vite-preset",
+  "private": true,
+  "author": "Miguel Montalvo <miguel.montalvo@barrelny.com>",
+  "license": "MIT",
+  "preset": "preset.ts",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@preset/core": "^0.11.0",
+    "@types/node": "^18.15.3",
+    "tsconfig": "workspace:*"
+  }
+}
